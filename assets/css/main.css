@@ -1,0 +1,624 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: New Year HTML5 Template
+    Description: New Year HTML5 Template
+    Author: Hasibul
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01. Theme default
+    02. Hero
+    03. Deals
+    04. Welcome
+    05. Event
+    06. Comming Soon
+    07. Holidays
+    08. Portfolio
+    09. Newsletter
+    10. Footer
+
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  01. Theme default
+/*----------------------------------------*/
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ccc;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+.img, img {
+  max-width: 100%;
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+a,
+button,
+i {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: medium none;
+  text-decoration: none;
+}
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  opacity: 1;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+i {
+  line-height: 1;
+  display: inline-block;
+}
+
+label {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input,
+select {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.custom-pad-15 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.custom-mar-15 {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.radius-50 {
+  border-radius: 50px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+* input::-moz-placeholder {
+  opacity: 1;
+  font-family: 'Inter', sans-serif;
+  color: rgba(7, 2, 17, 0.30);
+  font-size: 18px;
+  line-height: 1;
+}
+
+* input::placeholder {
+  opacity: 1;
+  font-family: 'Inter', sans-serif;
+  color: rgba(7, 2, 17, 0.30);
+  font-size: 18px;
+  line-height: 1;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.clear {
+  clear: both;
+}
+
+.translate-y--10 {
+  transform: translateY(-10px);
+}
+
+
+
+/*----------------------------------------*/
+/*  02. hero
+/*----------------------------------------*/
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.hero-area-bg {
+  background-image: url('../img/banner-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 0px 190px 0px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hero-area-bg:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.hero-area-text {
+  text-align: center;
+}
+.hero-area-text h4 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: 'Merriweather', serif;
+}
+.hero-area-text h1 {
+  font-size: 72px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  line-height: 95px;
+  font-family: 'Merriweather', serif;
+}
+
+/*----------------------------------------*/
+/*  03. Deals
+/*----------------------------------------*/
+.deals-text { 
+  text-align: center;
+  padding-top: 125px;
+}
+.deals-text h2 {
+  color: #F00;
+  font-family: Inter;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 55px;
+}
+.deals-text h3 {
+  color: #070211;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 55px;
+}
+.deals-text span {
+  color: #F00;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/*----------------------------------------*/
+/*  04. Welcome
+/*----------------------------------------*/
+.welcome-area-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../img/hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 120px 65px 120px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.welcome-area-bg:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.welcome-area-text {
+  max-width: 700px;
+}
+.welcome-area-text h2 {
+  font-size: 64px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  line-height: 88px;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 7.04px;
+}
+.welcome-area-text p {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.welcome-area-text a {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+.welcome-area-text a:hover {
+  text-decoration: underline;
+}
+.welcome-area-img {
+  text-align: right;
+}
+
+/*----------------------------------------*/
+/*  05. Event
+/*----------------------------------------*/
+.event-text {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+ border-radius: 16px;
+ padding: 102px 0px 120px 0px;
+ margin: 120px 0px;
+}
+.event-text div {
+  display: flex;
+  gap: 10px;
+}
+.event-text h4,.event-text span {
+  color: #F00;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+.event-text span {
+  color: #070211;
+}
+.event-text a {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: #F00;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 45px;
+}
+
+/*----------------------------------------*/
+/*  06. Comming Soon
+/*----------------------------------------*/
+.comming-soon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.comming-soon .portfolio-title,
+.comming-soon-middle,
+.comming-soon-right {
+  flex: 1 0 calc(33.33% - 24px);
+} 
+.comming-soon-right {
+  text-align: right;
+}
+.comming-soon-right div {
+  text-align: left;
+  display: inline-block;
+}
+.comming-soon-right h3 {
+  color: #F00;
+  font-size: 48px;
+  font-weight: 700;
+}
+.comming-soon-right p {
+  color: rgba(7, 2, 17, 0.60);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.comming-soon-middle {
+  text-align: center;
+  border: 15px solid #F00;
+  height: 430px;
+  width: 460px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------------------------*/
+/*  07. Holidays
+/*----------------------------------------*/
+.holidays-title span {
+  color: #070211;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+}
+.holidays-title h2,
+.holidays-title h2 span {
+  color: #F00;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1;
+}
+.holidays-title h2 span {
+  color: #070211;
+}
+.holidays-title p {
+  color: rgba(7, 2, 17, 0.60);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+.holidays-title {
+  text-align: center;
+}
+.holidays-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-image: url('../img/shape.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.holidays-image-right {
+  transform: translateY(5px);
+  position: relative;
+}
+.discount {
+  position: absolute;
+  left: -150px;
+  top: 85px;
+}
+
+
+/*----------------------------------------*/
+/*  08. Portfolio
+/*----------------------------------------*/
+.portfolio-title span {
+  color: #F00;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.portfolio-title h3 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.portfolio-title p {
+  color: rgba(7, 2, 17, 0.60);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.portfolio-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.portfolio-img-item {
+  overflow: hidden;
+  border-radius: 16px;
+  flex: 1 0 calc(33.33% - 24px);
+}
+.portfolio-img-item:hover img {
+  transform: scale(1.2);
+}
+
+
+/*----------------------------------------*/
+/*  09. Newsletter
+/*----------------------------------------*/
+.newsletter-form {
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.05);
+  text-align: center;
+}
+.newsletter-form h3 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.newsletter-form p {
+  color: rgba(7, 2, 17, 0.60);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 900px;
+  padding: 0px 15px;
+  display: inline-block;
+}
+.newsletter-form form {
+  width: 648px;
+  display: inline-block;
+  position: relative;
+}
+.newsletter-form form input {
+  height: 72px;
+  background-color: #fff;
+  color: rgba(7, 2, 17, 0.60);
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 50px;
+  padding-left: 25px;
+  padding-right: 225px;
+  border: none;
+  outline: none;
+}
+.newsletter-form form button {
+  height: 72px;
+  border-radius: 0px 50px 50px 0px;
+  background: #F00;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0px 15px;
+  width: 210px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*----------------------------------------*/
+/*  10. Footer
+/*----------------------------------------*/
+footer {
+  background-color: #070211;
+}
+footer p,
+footer a,
+footer span {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-top-right {
+  text-align: left;
+}
+.footer-top-right a{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.footer-top-right a img {
+  margin-right: 4px;
+}
+.footer-middle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 45px 0px 30px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+}
